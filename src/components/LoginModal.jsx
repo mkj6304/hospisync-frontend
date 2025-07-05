@@ -19,7 +19,7 @@ const LoginModal = ({ isOpen, onClose }) => {
       });
 
      // Save user data to localStorage
-   localStorage.setItem('currentUser', JSON.stringify(res.data.user));
+   localStorage.setItem('currentUser', JSON.stringify(res.data));
 
       if (role === 'patient') navigate('/dashboard/patient');
       else if (role === 'doctor') navigate('/dashboard/doctor');
