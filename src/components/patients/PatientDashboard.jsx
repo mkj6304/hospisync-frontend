@@ -4,6 +4,7 @@ import HospitalCard from './HospitalCard';
 import OPDRequestForm from './OPDRequestForm';
 import DashboardHeader from '../DashboardHeader';
 import '../../styles/patient.css';
+import RequestAdmission from '../RequestAdmissions';
 
 const PatientDashboard = () => {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
@@ -41,7 +42,7 @@ const role = currentUser?.user?.role || 'User';
         <section className="dashboard-section">
           <h2>Request a New OPD Appointment</h2>
           <div className="form-area">
-            <OPDRequestForm />
+            <RequestAdmission/>
           </div>
         </section>
 
