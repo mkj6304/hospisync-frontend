@@ -8,7 +8,7 @@ import RequestAdmission from '../RequestAdmissions';
 
 const PatientDashboard = () => {
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
-const username = currentUser?.username || 'Unknown';
+const username = currentUser?.user?.username || 'Unknown';
 const role = currentUser?.user?.role || 'User';
 
 
