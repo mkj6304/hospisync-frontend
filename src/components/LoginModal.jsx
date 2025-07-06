@@ -49,7 +49,7 @@ const LoginModal = ({ isOpen, onClose }) => {
             <option value="hospital">Hospital</option>
           </select>
 
-          <label>Email</label>
+          <label>Username</label>
           <input type="text" placeholder="Enter Username" value={username} onChange={(e) => setName(e.target.value)} required />
 
           <label>Password</label>
