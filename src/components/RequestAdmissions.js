@@ -27,7 +27,7 @@ const RequestAdmission = () => {
     setError(null);
     setResult(null);
     try {
-      const res = await axios.post('https://hospisync-backend.onrender.com/predict', formData);
+      const res = await axios.post('https://hospisync-backend.onrender.com/api/admissions', formData);
       setResult(res.data);
     } catch (err) {
       console.error(err);
